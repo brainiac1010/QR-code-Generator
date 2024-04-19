@@ -11,7 +11,6 @@ body {
 }
 
 .container {
-
     width: 400px;
     padding: 25px 35px;
     position: absolute;
@@ -26,7 +25,6 @@ body {
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 8px;
-
 }
 
 .container input {
@@ -37,7 +35,6 @@ body {
     padding: 10px;
     margin: 10px 0 20px;
     border-radius: 5px;
-
 }
 
 .container button {
@@ -60,13 +57,11 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s;
-
 }
 
 #imgBox img {
     width: 100%;
     padding: 10px;
-
 }
 
 #imgBox.show-img {
@@ -98,5 +93,30 @@ body {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .container input,
+    .container button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #imgBox {
+        width: 100%;
+    }
+
+    #imgBox img {
+        padding: 5px;
+    }
+
+    #imgBox.show-img {
+        max-height: 200px;
     }
 }
